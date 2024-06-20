@@ -1,9 +1,5 @@
 # pyrevit-plugin
-A VIKTOR Plugin that can be installed and used within Revit, to transfer data between the VIKTOR Platform and Autodesk Revit.
-
-> [!IMPORTANT]  
-> This plugin is a **prototype**; a Minimum Viable Product that showcases the opportunities for data exchange between the VIKTOR Platform and Revit. 
-> Please be aware that it is not feature-complete and might be updated in the future, based on the feedback that we're gathering.
+A VIKTOR Plugin that can be installed and used within Revit, to transfer data between a VIKTOR app and Autodesk Revit.
 
 ![](assets/pyRevitPlugin.png)
 
@@ -40,6 +36,17 @@ To 'push' your model through the Revit Plugin to the VIKTOR Platform, first open
 
 ![](assets/RevitPluginSteps.png)
 
+
+## Feedback & Support
+
+> [!IMPORTANT]  
+> This plugin is a **prototype** to showcase the opportunities for data exchange between Revit and VIKTOR. We are actively gathering feedback to 
+> further improve it.
+
+If you have any feedback on the plugin that you would like to share, please post it under [this Feature Request in our community forum](https://community.viktor.ai/t/revit-plugin-prototype-to-push-model-to-viktor-app/1902)
+
+While you're at it, join our community and ask for support, share ideas and learn about the latest features [here](https://community.viktor.ai/).
+
 ## Contribute
 Feel free to re-use and/or improve this plugin for your own projects. Below are some useful things to know, should you want to add more functionality.
 
@@ -72,5 +79,6 @@ Here are the docs for pyRevit, to help get started with development: https://pyr
 
 ### Example cases
 
-Note that during our last UCODE Hackathon, one of the attending groups has taken this `pyrevit-plugin` code and used and updated it to fit their particular use-case.
+Note that during our last UCODE Hackathon, one of the attending groups has taken this `pyrevit-plugin` code and used and updated it to fit their 
+particular use-case (which included a "pull" functionality). 
 Please have a look at their repository, to get an idea of how you can expand this **prototype**:  **[revitcentral](https://github.com/SvenDeLeau/revitcentral)**
