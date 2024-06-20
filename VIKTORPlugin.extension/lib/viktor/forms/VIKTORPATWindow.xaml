@@ -1,0 +1,54 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:s="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="VIKTOR - Authentication" Height="280" Width="550" >
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#1e90ff" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+        </Style>
+    </Window.Resources>
+
+    <DockPanel>
+        <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <!-- Image -->
+        <Image x:Name="logo" Width="100" Height="50" Grid.Row="0"  VerticalAlignment="Top" HorizontalAlignment="Right" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+
+        <!-- Paragraph -->
+        <TextBlock TextWrapping="Wrap"  Grid.Row="0" Grid.Column="0"  HorizontalAlignment="Left" Margin="0,10,0,0">
+            To interact with the VIKTOR platform, you must use a Personal Access Token. <LineBreak/>
+            Please provide your Personal Access Token to be saved for further interactions.
+        </TextBlock>
+
+        <!-- Password Field -->
+        <TextBlock Text="Personal Access Token:" Grid.Row="1" Margin="0,0,0,0" FontSize="14" FontWeight="SemiBold"/>
+        <PasswordBox x:Name="patBox" Grid.Row="1" Margin="160,0,0,5" ToolTip="Enter your Personal Access Token"/>
+
+        <!-- Cancel Button -->
+        <Button Content="Cancel" Grid.Row="2" Width="100" HorizontalAlignment="Left" Margin="0,25,0,0"
+                Click="cancel_button_click"/>
+
+        <!-- Send Button -->
+        <Button Content="Save" Grid.Row="2" Width="100" HorizontalAlignment="Right" Margin="0,25,0,0"
+                Click="save_button_click"/>
+
+        <!-- Hyperlink for Personal Access Token -->
+        <TextBlock Grid.Row="3" Margin="0,15,0,0" >
+            <Hyperlink NavigateUri="https://docs.viktor.ai/docs/faq" Click="handle_url_click"> Need help finding your Personal Access Token? </Hyperlink>
+        </TextBlock>
+    </Grid>
+    </DockPanel>
+</Window>

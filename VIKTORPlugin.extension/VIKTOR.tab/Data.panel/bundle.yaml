@@ -1,0 +1,7 @@
+title: Data
+tooltip: VIKTOR data exchange tools
+help_url: "https://docs.viktor.ai/docs/create-apps/software-integrations/"
+author: Kevin van Giessen
+layout:
+  - Push
+  - ResetAuth

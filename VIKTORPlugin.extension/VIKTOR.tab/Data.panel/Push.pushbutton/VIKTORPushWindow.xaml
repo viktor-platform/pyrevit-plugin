@@ -1,0 +1,62 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:s="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="VIKTOR" Height="320" Width="550" >
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#1e90ff" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+        </Style>
+    </Window.Resources>
+
+    <DockPanel>
+        <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <!-- Image -->
+        <Image x:Name="logo" Width="100" Height="50" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Right" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+
+        <!-- Paragraph -->
+        <TextBlock TextWrapping="Wrap"  Grid.Row="0" HorizontalAlignment="Left" Margin="0,10,0,4">
+            You are about to upload an export of the <Bold>Active View</Bold> to the VIKTOR platform. <LineBreak/>
+            Please provide a valid filename and location (URL) to upload the file to. <LineBreak/>
+            Note that the file will be appended to the list. Re-using an existing filename will not overwrite the existing file.
+        </TextBlock>
+
+        <!-- Filename and FileType Fields -->
+        <TextBlock Text="Filename:" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,10,0,0" FontSize="14" LineHeight="Auto"/>
+        <TextBox x:Name="filenameTextBox" Grid.Row="2" Grid.ColumnSpan="2" Margin="100,10,52,5" FontSize="14"
+                 ToolTip="Enter filename"/>
+        <ComboBox x:Name="fileType" Text="File Type" Grid.Row="2" FontSize="14" IsEditable="true" IsReadOnly="true" Margin="450,10,0,5">
+            <ComboBoxItem Content=".ifc" IsSelected="True" />
+        </ComboBox>
+
+        <!-- URL Field -->
+        <TextBlock Text="Entity URL:" Grid.Row="3" Grid.ColumnSpan="2" Margin="0,10,0,0" FontSize="14" LineHeight="Auto"/>
+        <TextBox x:Name="urlTextBox" Grid.Row="3" Grid.ColumnSpan="2" Margin="100,10,0,5" FontSize="14"
+                 Text="https://viktor.viktor.ai/workspaces/13/app/editor/21008"
+                 ToolTip="Enter Entity URL"/>
+
+        <!-- Cancel Button -->
+        <Button Content="Cancel" Grid.Row="4" Width="100" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="0,25,0,0"
+                Click="cancel_button_click"/>
+
+        <!-- Send Button -->
+        <Button Content="Send" Grid.Row="4" Width="100" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,25,0,0"
+                Click="send_button_click"/>
+
+    </Grid>
+    </DockPanel>
+</Window>
