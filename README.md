@@ -1,8 +1,8 @@
 # pyrevit-plugin
 A VIKTOR Plugin that can be installed and used within Revit, to transfer data between the VIKTOR Platform and Autodesk Revit.
 
-> [!NOTE]  
-> This plugin is a prototype; a Minimum Viable Product that showcases the opportunities for data exchange between the VIKTOR Platform and Revit. 
+> [!IMPORTANT]  
+> This plugin is a **prototype**; a Minimum Viable Product that showcases the opportunities for data exchange between the VIKTOR Platform and Revit. 
 > Please be aware that it is not feature-complete and might be updated in the future, based on the feedback that we're gathering.
 
 ![](assets/pyRevitPlugin.png)
@@ -17,7 +17,7 @@ A VIKTOR Plugin that can be installed and used within Revit, to transfer data be
    - Run installer and follow steps
    - Launch Revit, this should trigger pop-up modal for PyRevit addin, select "Always Load"
    
-     ![](assets/RevitAddinWarning.png)****
+     ![](assets/RevitAddinWarning.png)
 3. Navigate to pyRevit Settings:
    - Navigate to pyRevit tab, 
    - Click pyRevit dropdown button (bottom-left in the ribbon)
@@ -73,4 +73,4 @@ Here are the docs for pyRevit, to help get started with development: https://pyr
 ### Example cases
 
 Note that during our last UCODE Hackathon, one of the attending groups has taken this `pyrevit-plugin` code and used and updated it to fit their particular use-case.
-Please have a look at their repository, to get an idea of how you can expand this prototype:  **[revitcentral](https://github.com/SvenDeLeau/revitcentral)**
+Please have a look at their repository, to get an idea of how you can expand this **prototype**:  **[revitcentral](https://github.com/SvenDeLeau/revitcentral)**
