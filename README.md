@@ -25,8 +25,8 @@ A VIKTOR Plugin that can be installed and used within Revit, to transfer data be
      ![](assets/pyRevitTab.png)
    - Click Settings
    - Navigate to 'Custom Extension Directories' (bottom)
-4. Add the recently downloaded 'VIKTORPlugin' folder from step 1, and save the settings
-   - Make sure to select the 'VIKTORPlugin' folder and not the 'VIKTORPlugin.extension' folder
+4. Add the directory this repo folder, and save the settings
+   - Make sure to select the top repo folder and not the 'VIKTORPlugin.extension' folder
 5. You should get a similar pop-up, about the new VIKTOR Plugin. Once again, click 'Always Load'.
 6. You should now see a VIKTOR tab appear. This concludes the installation.
 
